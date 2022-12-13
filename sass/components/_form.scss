@@ -1,0 +1,121 @@
+.fields {
+    margin: 12px 40px 20px 40px;
+}
+
+.field-item:focus-within input,
+.field-item:focus-within textarea {
+    border-color: var(--accent-color);
+}
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-top: 40px;
+    width: 448px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.field-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+}
+.field-item label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color);
+    text-align: left;
+    margin-bottom: 4px;
+}
+%textarea-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+}
+.field-item textarea {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    @extend %textarea-input;
+}
+.field-item input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    @extend %textarea-input;
+}
+
+.modal-icon {
+    position: absolute;
+    
+    .field-item:focus-within & {
+        fill: var(--accent-color);
+    }
+}
+.modal-name {
+    width: 12px;
+    height: 12px;
+    top: 32px;
+    left: 15px;
+}
+.modal-tel {
+    width: 13px;
+    height: 13px;
+    top: 31.26px;
+    left: 14.27px;
+}
+.modal-mail {
+    width: 15px;
+    height: 12px;
+    top: calc( 18px + 14px);
+    left: 13.5px;
+}
+.modal-checkbox {
+    width: 425px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.checkbox-icon {
+    border: 1px solid var(--primary-text-color);
+    border-radius: 2px;
+    fill: var(--thirdly-text-color);
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+}
+.checkbox input:checked + .checkbox-icon {
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+.modal-checkbox label{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+.modal-checkbox input {
+    appearance: none;
+}
+.checkbox-link {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+.checkbox-button {
+    @extend .hero-button;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 57px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

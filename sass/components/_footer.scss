@@ -1,0 +1,198 @@
+
+.webstudio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    & span{
+        color: var(--accent-color);
+}
+
+        &:hover {
+            color:var(--accent-color);
+}
+}
+.white {
+    display: inline-flex;
+    margin-bottom: 20px;
+    color:var(--thirdly-text-color);
+    height: 28px;
+}
+.address {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color:var(--thirdly-text-color);
+}
+.address,
+.contact-item:first-of-type {
+    margin-bottom: 9px;
+}
+.contact-item-footer:first-of-type {
+    @media screen and (min-width: $mobile) {
+    margin-bottom: 8px;   
+    }
+    
+} 
+.contact-link-footer {
+    color: var(--secondary-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.footer {
+
+    @media screen and (min-width: $mobile) {
+        padding: 60px 15px;
+    }
+    @media screen and (min-width: $tablet) {
+        padding: 65px 89px 60px 90px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-right: 0;
+        padding-left: 0;
+        height: 130px;
+        box-sizing: content-box;
+    }
+    & h3 {
+        color: var(--thirdly-text-color);
+        margin-bottom: 20px;    
+}
+
+    & .icon-link {
+        color: var(--thirdly-text-color);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    & .icons-list {
+        background-color: var(--background-color);
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+
+    }
+    & .icon-link:hover,
+    & .icon-link:focus {
+        background-color: var(--accent-color);
+    }
+}
+.address-container {
+    width: 231px;    
+    margin-bottom: 60px;
+    
+
+    @media screen and (min-width: $mobile) {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    @media screen and (min-width: $desktop) {
+        height: 132px;
+        margin-right: 70px;
+    }
+}
+.join-container {
+
+    @media screen and (min-width: $mobile) {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        width: 206px;
+        margin-bottom: 60px;
+    }    
+    @media screen and (min-width: $desktop) {
+        margin: 0;
+        margin-right: 50px;
+        margin-bottom: 100px;
+        height: 100%;
+    }
+}
+.share-container {
+
+
+    @media screen and (min-width: $mobile) {
+        text-align: center;
+    }
+    @media screen and (min-width: $tablet) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @media screen and (min-width: $desktop) {
+        height: 206px;
+        margin: 0;
+        margin-bottom: 100px;
+        margin-right: 100px;
+        height: 100%;
+    }
+    & h3 {
+        width: 270px;
+
+        @media screen and (min-width: $mobile) {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        @media screen and (min-width: $desktop) {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    & div {
+
+        @media screen and (min-width: $desktop) {
+            display: flex;   
+        }
+        
+    }
+}
+
+.share-form input {
+    background-color: var(--background-color);
+    border: 2px rgba(255, 255, 255, 0.1) solid;
+    border-radius: 4px;
+    outline: none;
+
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+       width: 310px;
+        height: 45px; 
+    }
+}
+.share-button {
+    height: 45px;
+    width: 200px;
+    margin-left: 10px;
+    align-items: center;
+    padding-left: 25px;
+    @extend .hero-button;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        background-image: url(../images_and_icons/icons/tg.svg);
+        width: 24px;
+        height: 24px;
+        fill: white;
+        margin-left: 10px;
+        // outline: 1px black solid;
+        background-size: contain;
+    }
+}
+.send-icon {
+    fill: white;
+    margin-left: 10px;
+}
+

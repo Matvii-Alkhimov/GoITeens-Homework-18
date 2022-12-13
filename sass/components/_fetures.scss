@@ -1,0 +1,64 @@
+
+.fetures {
+
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+
+    @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+}
+}
+.fetures-item {
+    @media screen and (min-width:$tablet) {
+    margin: 15px;
+    width: calc( ( 100% - 30px*2) / 2);
+    }
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+    }
+}
+.fetures-item:not(:last-of-type) {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 30px;}  
+}
+.fetures-container {
+    background: #F5F4FA;    
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 100%;
+    }
+}
+.fetures-container + h3 {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $tablet) {
+        text-align: start;
+    }
+}
+.fetures-item p {
+
+    @media screen and (min-width: $mobile) {
+        
+    }
+}
+.fetures-title {
+    visibility: hidden;
+}
